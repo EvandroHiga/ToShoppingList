@@ -15,16 +15,16 @@
 	<!-- Package "root" do projeto -->
 	<context:component-scan base-package="br.com.toshoppinglist" />
 	
-	<!-- Arquivos CSS / javascript -->
+	<!-- Arquivos CSS e javascript -->
 	<mvc:resources location="/resources/" mapping="/resources/**" />
 	
-	<!-- DB MySQL -->
-<!-- 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"> -->
-<!-- 		<property name="driverClassName" value="com.mysql.jdbc.Driver" /> -->
-<!-- 		<property name="url" value="jdbc:mysql://localhost:3306/recipe_to_shopping_list_db" /> -->
-<!-- 		<property name="username" value="username_here" /> -->
-<!-- 		<property name="password" value="user_password_here" /> -->
-<!-- 	</bean> -->
+	<!-- MySQL config -->
+	<bean id="mySqlDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/recipe_to_shopping_list_db" />
+		<property name="username" value="username_here" />
+		<property name="password" value="password_here" />
+	</bean>
 
 	<!-- Caminho padrao das views -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
