@@ -22,8 +22,8 @@
 	<bean id="mySqlDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url" value="jdbc:mysql://localhost:3306/recipe_to_shopping_list_db" />
-		<property name="username" value="higa" />
-		<property name="password" value="Hexacta@01" />
+		<property name="username" value="username" />
+		<property name="password" value="password" />
 	</bean>
 
 	<!-- Caminho padrao das views -->
