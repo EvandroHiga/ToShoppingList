@@ -1,12 +1,10 @@
 package br.com.toshoppinglist.service;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.servlet.ModelAndView;
 
 import br.com.toshoppinglist.dao.RecipeDAO;
-import br.com.toshoppinglist.modelo.Recipe;
 
 @Service
 public class RecipeService {
@@ -18,8 +16,11 @@ public class RecipeService {
 		this.dao = dao;
 	}
 	
-	public List<Recipe> buscarTodasReceitas() {
-		return dao.buscarTodasReceitas();
+	public ModelAndView buscarTodasReceitas() {
+		ModelAndView modelAndView = new ModelAndView("/receitas/todasReceitas");
+		modelAndView.addObject("todasReceitas_list", dao.buscarTodasReceitas());
+		
+		return modelAndView;
 	}
 
 }

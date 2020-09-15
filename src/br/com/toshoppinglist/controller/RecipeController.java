@@ -3,12 +3,12 @@ package br.com.toshoppinglist.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import br.com.toshoppinglist.service.RecipeService;
 
 @Controller
 public class RecipeController {
-	
 	
 	private RecipeService service;
 	
@@ -18,9 +18,8 @@ public class RecipeController {
 	}
 	
 	@RequestMapping("todasReceitas")
-	public String buscarTodasReceitas() {
-		service.buscarTodasReceitas();
-		
-		return "todasReceitas";
+	public ModelAndView buscarTodasReceitas() {
+		ModelAndView modelAndView = service.buscarTodasReceitas();
+		return modelAndView;
 	}
 }

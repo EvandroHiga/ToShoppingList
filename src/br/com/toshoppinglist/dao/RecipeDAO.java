@@ -38,11 +38,11 @@ public class RecipeDAO {
 			ResultSet resultSet = preparedStatement.executeQuery();
 			
 			while(resultSet.next()) {
-				receitasList.add(getRecipeFromRs(resultSet));
+				receitasList.add(getRecipeFromResultSet(resultSet));
 			}
-			
 			resultSet.close();
 			preparedStatement.close();
+			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} 
@@ -50,7 +50,7 @@ public class RecipeDAO {
 		return receitasList;
 	}
 
-	private Recipe getRecipeFromRs(ResultSet resultSet) {
+	private Recipe getRecipeFromResultSet(ResultSet resultSet) {
 		Recipe recipe = new Recipe();
 		
 		try {
