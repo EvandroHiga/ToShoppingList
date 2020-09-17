@@ -6,40 +6,36 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
-		<title>:: Todas as receitas ::</title>
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
-		<link href="<c:url value="/resources/css/index.css" />" rel="stylesheet">
+		<title>:: todas as receitas ::</title>
+		<link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
+		<link href="<c:url value="/resources/css/table.css" />" rel="stylesheet">
 	</head>
-	<body class="container">
-		<header>:: Todas as receitas ::</header>
+	<body>
+		<header>:: todas as receitas ::</header>
 		<main>
-			<section>
-				<input class="text-box" type="text" id="filtrar-paciente" placeholder="Nome do paciente:">
-				<table>
-					<thead>
-						<tr>
-							<th>Nome</th>
-							<th>Ingredientes</th>
-							<th>Modo de preparo</th>
-							<th>Data</th>
+			<input class="text-box" type="text" id="filtrar-receitas" placeholder="nome da receita:">
+			<table>
+				<thead>
+					<tr>
+						<th>Receita</th>
+						<th>Data</th>
+						<th style="border:0px; opacity:0;"></th>
+						<th style="border:0px; opacity:0;"></th>
+					</tr>
+				</thead>
+				<tbody id="tabela-todas-receitas">
+					<c:forEach items="${todasReceitas_list}" var="receita">
+						<tr class="receita">
+							<td class="info-nome-receita">${receita.nome_receita}</td>
+							<td class="info-data-receita"><fmt:formatDate value="${receita.data_receita.time}" pattern="dd/MM/yyyy"/></td>
+							<td><a href="">ver receita</a></td>
+							<td><a href="">adicionar &agrave; lista de compras</a></td>
 						</tr>
-					</thead>
-					<tbody id="tabela-pacientes">
-						<c:forEach items="${todasReceitas_list}" var="receita">
-							<tr class="paciente">
-								<td class="info-nome">${receita.nome_receita}</td>
-								<td class="info-peso">${receita.ingredientes_receita}</td>
-								<td class="info-altura">${receita.modo_preparo_receita}</td>
-								<td class="info-gordura"><fmt:formatDate value="${receita.data_receita.time}" pattern="dd/MM/yyyy"/></td>
-							</tr>
-						</c:forEach>
-					</tbody>
-				</table>
-			</section>
+					</c:forEach>
+				</tbody>
+			</table>
 		</main>
-		<script src="<c:url value="/resources/js/filtrar-pacientes.js" />"></script>
-		<script src="<c:url value="/resources/js/adicionar-paciente.js" />"></script>
-<%-- 		<script src="<c:url value="/resources/js/remover-pacientes.js" />"></script> --%>
 		
+		<script src="<c:url value="/resources/js/receita.js" />"></script>
 	</body>
 </html>

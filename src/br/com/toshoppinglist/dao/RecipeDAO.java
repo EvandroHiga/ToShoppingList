@@ -56,7 +56,6 @@ public class RecipeDAO {
 		try {
 			recipe.setId_receita(resultSet.getInt("id_receita"));
 			recipe.setNome_receita(resultSet.getString("nome_receita"));
-			recipe.setIngredientes_receita(resultSet.getString("ingredientes_receita"));
 			recipe.setModo_preparo_receita(resultSet.getString("modo_preparo_receita"));
 			
 			Date data_receita_date = resultSet.getDate("data_receita");

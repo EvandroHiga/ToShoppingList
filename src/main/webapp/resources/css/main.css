@@ -1,0 +1,35 @@
+*{
+	box-sizing: border-box;
+ }
+
+header{
+	font: 32px "Courier New", Courier, monospace;
+	background-color: #0c8cb0;
+	color: #FFF;
+	height: 1.2em;
+	margin-top: 8px;
+	margin-bottom: 25px;
+	text-indent: 7px;
+}
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	background-color: #FFF;
+	line-height: 1;
+	width: 65%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.text-box{
+	width: 35%;
+	height: 30px;
+	border: 1.3px solid #75a3a3;
+	padding: .5em;
+	margin-bottom: 10px;
+}
+
+.no-show-filter{
+	display: none;
+}

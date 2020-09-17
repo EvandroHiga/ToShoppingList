@@ -5,7 +5,6 @@ import java.util.Calendar;
 public class Recipe {
 	private int id_receita;
 	private String nome_receita;
-	private String ingredientes_receita;
 	private String modo_preparo_receita;
 	private Calendar data_receita;
 	
@@ -23,13 +22,6 @@ public class Recipe {
 		this.nome_receita = nome_receita;
 	}
 	
-	public String getIngredientes_receita() {
-		return ingredientes_receita;
-	}
-	public void setIngredientes_receita(String ingredientes_receita) {
-		this.ingredientes_receita = ingredientes_receita;
-	}
-	
 	public String getModo_preparo_receita() {
 		return modo_preparo_receita;
 	}
@@ -43,6 +35,5 @@ public class Recipe {
 	public void setData_receita(Calendar data_receita) {
 		this.data_receita = data_receita;
 	}
-	
 	
 }

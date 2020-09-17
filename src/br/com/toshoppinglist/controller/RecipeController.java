@@ -17,7 +17,7 @@ public class RecipeController {
 		this.service = service;
 	}
 	
-	@RequestMapping("todasReceitas")
+	@RequestMapping("/todasReceitas")
 	public ModelAndView buscarTodasReceitas() {
 		ModelAndView modelAndView = service.buscarTodasReceitas();
 		return modelAndView;
