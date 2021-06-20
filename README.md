@@ -5,7 +5,7 @@
 > Aplicação web contruída com Spring MVC, irá armazenar e gerenciar receitas e, a partir destas, criar listas de compras customizáveis.
 
 ### O que foi utilizado
-> ***Java 8***, ***Spring MVC 4***, ***JDBC***, ***MySQL 8***, ***Tomcat 8.5*** e ***Apache Maven***.
+> ***Java 8***, ***Spring MVC 4***, ***JDBC API***, ***MySQL 8***, ***Tomcat 8.5*** e ***Apache Maven***.
 
 ### Como usar
 > `git clone https://github.com/EvandroHiga/ToShoppingList.git`
