@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class RecipeController {
 	
-	@RequestMapping("todasReceitas")
+	@RequestMapping("test")
 	public String buscarTodasReceitas() {
-		return "todasReceitas";
+		return "testPage";
 	}
 }

@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>:: Todas as receitas ::</title>
+		<title>:: Recipe to Shopping list :: Spring MVC 4 ::</title>
 	</head>
 	<body>
 		<h1>Recipe to Shopping list</h1>
