@@ -1,4 +1,4 @@
-# RecipeToShoppingList :: Web App *Spring MVC*
+# RecipeToShoppingList :: Web App *Spring MVC 4*
 ![#ffff1a](https://via.placeholder.com/15/ffff1a/000000?text=+) *Em andamento...*
 
 ### Sobre
