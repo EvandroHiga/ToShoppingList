@@ -43,9 +43,6 @@ document.getElementById("tabela-todas-receitas").addEventListener("dblclick", fu
 });
 
 
-/*
- * 
- */
 //function func_gerarListaCompras(){
 //	var receitasSelecionadas_node = document.getElementById("tabela-receitas-adicionadas").querySelectorAll(".nome-receita-adicionada");
 //	var receitasSelecionadas_array = new Array();
