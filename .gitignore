@@ -1,0 +1,47 @@
+HELP.md
+/.metadata/
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+mvnw
+mvnw.cmd
+.mvn/*
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+/.settings
+/.project
+/.classpath
+
+# Compiled class file
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Log file
+*.log
+
+# Ignoring the folders below
+/target/
+/bin/
+/build/
+.gradle/
