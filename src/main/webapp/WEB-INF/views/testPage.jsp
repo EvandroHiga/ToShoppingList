@@ -4,10 +4,10 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>:: Recipe to Shopping list :: Spring MVC 4 ::</title>
+		<title>:: Spring MVC 4 ::</title>
 	</head>
 	<body>
-		<h1>Recipe to Shopping list</h1>
+		<h1>Recipe  =>  Shopping List</h1>
 		<h3>Proj. Java Web Spring MVC 4</h3>
 		<h6>Carlos Evandro Higa</h6>
 	</body>

@@ -9,18 +9,18 @@ import br.com.toshoppinglist.dao.RecipeDAO;
 @Service
 public class RecipeService {
 
-//	private RecipeDAO dao;
+	private RecipeDAO dao;
 	
-//	@Autowired
-//	public RecipeService(RecipeDAO dao) {
-//		this.dao = dao;
-//	}
+	@Autowired
+	public RecipeService(RecipeDAO dao) {
+		this.dao = dao;
+	}
+		
+	public ModelAndView buscarTodasReceitas() {
+		ModelAndView modelAndView = new ModelAndView("/receitas/todasReceitas");
+		modelAndView.addObject("todasReceitas_list", dao.buscarTodasReceitas());
+		
+		return modelAndView;
+	}
 	
-//	public ModelAndView buscarTodasReceitas() {
-//		ModelAndView modelAndView = new ModelAndView("/receitas/todasReceitas");
-//		modelAndView.addObject("todasReceitas_list", dao.buscarTodasReceitas());
-//		
-//		return modelAndView;
-//	}
-
 }

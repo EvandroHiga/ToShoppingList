@@ -50,6 +50,30 @@ public class RecipeDAO {
 //		return receitasList;
 //	}
 
+	public List<Recipe> buscarTodasReceitas() {
+		List<Recipe> receitasList = new ArrayList<Recipe>();
+		Recipe receitaMock1 = new Recipe();
+		Recipe receitaMock2 = new Recipe();
+		Recipe receitaMock3 = new Recipe();
+		
+		receitaMock1.setIdReceita(1);
+		receitaMock1.setNomeReceita("Pao de Forma");
+		receitaMock1.setModoPreparoReceita("Descricao do modo de preparo do Pao de Forma.");
+		receitasList.add(receitaMock1);
+		
+		receitaMock2.setIdReceita(2);
+		receitaMock2.setNomeReceita("Pizza");
+		receitaMock2.setModoPreparoReceita("Modo de preparo da Pizza...");
+		receitasList.add(receitaMock2);
+		
+		receitaMock3.setIdReceita(3);
+		receitaMock3.setNomeReceita("Feijoada");
+		receitaMock3.setModoPreparoReceita("Como se faz uma feijoada: ");
+		receitasList.add(receitaMock3);
+		
+		return receitasList;
+	}
+
 //	private Recipe getRecipeFromResultSet(ResultSet resultSet) {
 //		Recipe recipe = new Recipe();
 //		

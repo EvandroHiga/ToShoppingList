@@ -12,23 +12,22 @@
 	</head>
 	<body>
 		<header>:: todas as receitas ::</header>
+		
 		<main>
 			<input type="text" id="filtrar-receitas" class="text-box" placeholder="nome da receita:">
-			
 			<table>
 				<thead>
 					<tr>
 						<th>Receita</th>
-						<th>Data</th>
-						<th class="no-show-filter"></th>
+						<th>Modo de Preparo</th>
+  						<th class="no-show-filter"></th>
 					</tr>
 				</thead>
 				<tbody id="tabela-todas-receitas">
 					<c:forEach items="${todasReceitas_list}" var="receita">
 						<tr>
-							<td class="nome-receita">${receita.nome_receita}</td>
-							<td class="data-receita"><fmt:formatDate value="${receita.data_receita.time}" pattern="dd/MM/yyyy"/></td>
-							<td style="border:0px;" class="link-ver-receita"><a href="" target="_blank">ver receita</a></td>
+							<td class="nome-receita">${receita.nomeReceita}</td>
+							<td class="modo-preparo-receita">${receita.modoPreparoReceita}</td>
 						</tr>
 					</c:forEach>
 				</tbody>
@@ -36,14 +35,13 @@
 			
 			<hr>
 			
-<!-- 			<form action="/gerarListaCompras">			 -->
+<!--		<form action="/gerarListaCompras"> -->
 				<table>
 					<tbody id="tabela-receitas-adicionadas">
 					</tbody>
-				</table>
-				
+				</table>	
 				<button id="gerar-lista-compras" onclick="func_gerarListaCompras()">Gerar lista!</button>
-<!-- 			</form> -->
+<!--		</form> -->
 		</main>
 		
 		<script src="<c:url value="/resources/js/receita.js" />"></script>
