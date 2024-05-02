@@ -1,15 +1,9 @@
-# RecipeToShoppingList :: Web App *Spring MVC 4*
-![#ffff1a](https://via.placeholder.com/15/ffff1a/000000?text=+) *Em andamento...*
+# RecipeToShoppingList
 
 ### Sobre
-> Aplicação web contruída com Spring MVC, irá armazenar e gerenciar receitas e, a partir destas, criar listas de compras customizáveis.
-
-### O que foi utilizado
-> ***Java 8***, ***Spring MVC 4***, ***JDBC API***, ***MySQL 8***, ***Tomcat 8.5*** e ***Apache Maven***.
+> {descontinuado} Aplicação monolítica contruída com **Spring MVC 4**, utilizando páginas JSP, que iria armazenar e gerenciar receitas e, a partir destas, criar listas de compras customizáveis. Código mantido apenas para servir de exemplo.
 
 ### Como usar
-> `git clone https://github.com/EvandroHiga/ToShoppingList.git`
-
-> Importe o projeto Maven para a sua IDE e inicie-o pelo Tomcat (ou outro servlet container).
+> Não há o Tomcat *embedded* como estamos acostumados a ver atualmente em projetos Spring Boot. Desta forma, é necessário baixar o Tomcat (ou outro servlet container) separadamente e rodar o .war do projeto ou utilizar uma IDE que faça esta tarefa (eclipse, por exemplo).
 
 > Chame a URL `http://localhost:8080/ToShoppingList/test`.
